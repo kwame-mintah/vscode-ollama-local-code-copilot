@@ -1,0 +1,26 @@
+version: "3.9"
+
+services:
+  ollama:
+    image: ollama/ollama:0.1.22
+    volumes:
+      - ollama:/root/.ollama
+    ports:
+      - "11434:11434"
+    networks:
+      - app
+    restart: always
+
+  ollama-setup:
+    build: .
+    depends_on:
+      - ollama
+    networks:
+      - app
+
+
+volumes:
+  ollama:
+
+networks:
+  app:

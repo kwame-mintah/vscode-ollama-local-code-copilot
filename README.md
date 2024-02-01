@@ -33,10 +33,10 @@ The project uses the following software:
 
 ## Notes
 
-### Using different models for GPT
+### Using different Large Language Models (LLM) with CodeGPT
 
 You can edit the `docker-entrypoint.sh` to pull any model available in the [Ollama library](https://ollama.ai/library), however CodeGPT currently
-supports a few models  via the UI.
+supports a few models via the UI.
 
 ### What devices has this been tested on?
 

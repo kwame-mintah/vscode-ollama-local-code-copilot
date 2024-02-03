@@ -1,0 +1,4 @@
+.vscode
+*.yaml
+*.md
+.env.example

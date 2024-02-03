@@ -16,7 +16,7 @@ The project uses the following software:
    docker-compose -up -d --build
    ```
 
-2. Wait for the `ollama-setup-1` service to complete downloading [codellama](https://ollama.ai/library/codellama).
+2. Wait for the `ollama-setup-1` service to complete downloading [codellama](https://ollama.ai/library/codellama) and other models.
 
    ```commandline
     2024-01-31 23:36:50 {"status":"verifying sha256 digest"}

@@ -2,7 +2,9 @@ version: "3.9"
 
 services:
   ollama:
-    image: ollama/ollama:0.1.22
+    image: ollama/ollama:${OLLAMA_TAG:-latest}
+    env_file:
+      - .env
     volumes:
       - ollama:/root/.ollama
     ports:
@@ -13,6 +15,8 @@ services:
 
   ollama-setup:
     build: .
+    environment:
+      - OLLAMA_MODELS=codellama:7b-instruct
     depends_on:
       - ollama
     networks:

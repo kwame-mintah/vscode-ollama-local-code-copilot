@@ -16,7 +16,7 @@ services:
   ollama-setup:
     build: .
     environment:
-      - OLLAMA_MODELS=codellama:7b-instruct
+      - OLLAMA_MODELS=codellama:7b-instruct,wizardcoder:python,deepseek-coder:base
     depends_on:
       - ollama
     networks:

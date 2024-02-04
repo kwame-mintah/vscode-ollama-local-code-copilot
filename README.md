@@ -13,7 +13,7 @@ The project uses the following software:
 1. Navigate to the directory where the repository has been cloned and start the containers:
 
    ```commandline
-   docker-compose -up -d --build
+   docker-compose up -d --build
    ```
 
 2. Wait for the `ollama-setup-1` service to complete downloading [codellama](https://ollama.ai/library/codellama) and other models.

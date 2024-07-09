@@ -16,7 +16,7 @@ The project uses the following software:
    docker-compose up -d --build
    ```
 
-2. Wait for the `ollama-setup-1` service to complete downloading [codellama](https://ollama.ai/library/codellama) and other models.
+2. Wait for the `ollama-setup-1` service to complete downloading [codellama](https://ollama.ai/library/codellama)[^1] and other models.
 
    ```commandline
     2024-01-31 23:36:50 {"status":"verifying sha256 digest"}
@@ -29,7 +29,7 @@ The project uses the following software:
 3. Install CodeGPT onto VSCode and follow the instructions provided [here](https://docs.codegpt.co/docs/tutorial-ai-providers/ollama).
 
 > [!NOTE]
-> Initial prompts to Ollama might be slow, if the container was not previously running and not interacted with the model recently.
+> Initial prompts to Ollama might be slow, if the model / container was not previously running and not interacted with recently.
 
 ## Notes
 
@@ -41,4 +41,7 @@ have pulled into the 'Model' field for Ollama provider.
 
 ### What devices has this been tested on?
 
-I have only tried the container on my MacBook Pro M1 Pro with 16 RAM, so YMMV.
+I have only tried the container on my MacBook Pro M1 Pro with 16 RAM (2021), so YMMV. Also unable to comment on model(s) that require a
+Graphics processing unit (GPU).
+
+[^1]: CodeGPT also allows for downloading model(s) via the extension and also displays installed models via the UI.

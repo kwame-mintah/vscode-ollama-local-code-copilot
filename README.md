@@ -6,7 +6,7 @@ An example to run an instance of [Ollama](https://ollama.ai/) via docker-compose
 
 The project uses the following software:
 * [Docker for desktop](https://www.docker.com/products/docker-desktop/)
-* [CodeGPT Chat](https://marketplace.visualstudio.com/items?itemName=DanielSanMedium.dscodegpt)
+* [Llama Coder](https://marketplace.visualstudio.com/items?itemName=ex3ndr.llama-coder)
 
 ## Usage
 
@@ -26,22 +26,22 @@ The project uses the following software:
     100 1128k    0 1128k    0    21   2546      0 --:--:--  0:07:33 --:--:--    23
    ```
 
-3. Install CodeGPT onto VSCode and follow the instructions provided [here](https://docs.codegpt.co/docs/tutorial-ai-providers/ollama).
+3. Install Llama Coder VSCode extension
 
 > [!NOTE]
 > Initial prompts to Ollama might be slow, if the model / container was not previously running and not interacted with recently.
 
 ## Notes
 
-### Using different Large Language Models (LLM) with CodeGPT
+### Using different Large Language Models (LLM) with Llama Coder
 
-You can edit the `docker-entrypoint.sh` to pull any model available in the [Ollama library](https://ollama.ai/library), however CodeGPT currently
-supports a [few models](https://docs.codegpt.co/docs/tutorial-ai-providers/ollama) via the UI. You will need to manually type in the model name you
-have pulled into the 'Model' field for Ollama provider.
+You can edit the `docker-entrypoint.sh` to pull any model available in the [Ollama library](https://ollama.ai/library), however Llama Coder currently
+supports a [few models](https://github.com/ex3ndr/llama-coder?tab=readme-ov-file#models) via the UI. Within the extension settings select a 'custom'
+inference model and then enter the model name within the "Inference > Custom: Model" field.
 
 ### What devices has this been tested on?
 
 I have only tried the container on my MacBook Pro M1 Pro with 16 RAM (2021), so YMMV. Also unable to comment on model(s) that require a
 Graphics processing unit (GPU).
 
-[^1]: CodeGPT also allows for downloading model(s) via the extension and also displays installed models via the UI.
+[^1]: Not all models perform the same on the host machine, please ensure you select an appropriate model for the best performance.

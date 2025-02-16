@@ -1,4 +1,5 @@
 {
   "inference.model": "stable-code:3b-code-q4_0",
-  "inference.custom.format": "stable-code"
+  "inference.custom.format": "stable-code",
+  "editor.inlineSuggest.enabled": true
 }

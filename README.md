@@ -28,8 +28,11 @@ The project uses the following software:
 
 3. Install Llama Coder VSCode extension
 
+![Example of extension running for code completion](/docs/llama_coder_stable_code_running_output_example.gif)
+
 > [!NOTE]
-> Initial prompts to Ollama might be slow, if the model / container was not previously running and not interacted with recently.
+> Initial prompts to Ollama might be slow, if the model and/or container was not previously running and not interacted with recently.
+> Please note that the [`.env.sample`](.env.example) has the model loaded in memory set to [1 hour](https://github.com/ollama/ollama/blob/v0.5.11/docs/faq.md#how-do-i-keep-a-model-loaded-in-memory-or-make-it-unload-immediately).
 
 ## Notes
 

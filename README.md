@@ -32,7 +32,7 @@ The project uses the following software:
 
 > [!NOTE]
 > Initial prompts to Ollama might be slow, if the model and/or container was not previously running and not interacted with recently.
-> Please note that the [`.env.sample`](.env.example) has the model loaded in memory set to [1 hour](https://github.com/ollama/ollama/blob/v0.5.11/docs/faq.md#how-do-i-keep-a-model-loaded-in-memory-or-make-it-unload-immediately).
+> Please note that the [`.env.example`](.env.example) has the model loaded in memory set to [1 hour](https://github.com/ollama/ollama/blob/v0.5.11/docs/faq.md#how-do-i-keep-a-model-loaded-in-memory-or-make-it-unload-immediately).
 
 ## Notes
 
